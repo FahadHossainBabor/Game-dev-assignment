@@ -235,6 +235,50 @@
   gap: 20px;
 }
 
+.play-container{
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); 
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: opacity 0.3s ease;
+  border-radius: 1rem;
+}
+
+.play-button {
+  color: white;
+  font-size: 20px; /* Adjust the icon size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.play-button i {
+  font-size: 30px;
+  margin-bottom: 10px; /* Space between icon and text */
+}
+
+.play-container:hover .overlay {
+  opacity: 1;
+}
+
+.play-container:hover .play-button {
+  opacity: 1;
+}
+
 /* Video section ends here */
 
 /* Player section starts */
