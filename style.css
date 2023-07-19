@@ -28,6 +28,14 @@
   border: none;
   outline: none;
 }
+
+.text-primary {
+  color: #534c64;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.875rem;
+}
 /* Header Section */
 
 /* Navigation section */
@@ -149,42 +157,93 @@
   margin-right: 10px;
 }
 
+/* Main section starts here */
+/* Gamer section */
+.gamer-contaienr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px;
+}
+.gamer-content {
+  text-align: right;
+}
+.gamer-title {
+  text-align: right;
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+}
+.gamer-des {
+  margin-bottom: 2rem;
+}
 
+.purpose {
+  margin-top: 1.5rem;
+}
+.unleash {
+  color: #534c64;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.8125rem;
+}
 /* Media query to make the website responsive */
 
 @media screen and (max-width: 576px) {
-
+  /* Navigation section */
+  @media screen and (max-width: 576px) {
     /* Navigation section */
-    @media screen and (max-width: 576px) {
+    .nav-container {
+      flex-direction: column;
+      height: auto;
+    }
 
-        /* Navigation section */
-        .nav-container {
-            flex-direction: column;
-            height: auto;
-        }
-    
-        .nav-menu > ul {
-            flex-direction: column;
-            width: 100%;
-        }
-    
-        .nav-menu > ul > li {
-            margin-bottom: 10px; 
-        }
-    
-        .nav-logo {
-            margin-bottom: 20px; 
-        }
-        
-        .nav-logo > div {
-            font-size: 2rem;
-        }
+    .nav-menu > ul {
+      flex-direction: column;
+      width: 100%;
+    }
 
-        .special{
-            width: 16.375rem;     
-            text-align: center;
-            padding: 1.25rem;
-        }
+    .nav-menu > ul > li {
+      margin-bottom: 10px;
+    }
 
-}
+    .nav-logo {
+      margin-bottom: 20px;
+    }
+
+    .nav-logo > div {
+      font-size: 2rem;
+    }
+
+    .special {
+      width: 16.375rem;
+      text-align: center;
+      padding: 1.25rem;
+    }
+
+    /* Banner section */
+    .banner-container {
+      flex-direction: column-reverse;
+    }
+
+    .banner-container,
+    .banner-content {
+      padding: 0 20px;
+    }
+
+    .banner-special-title {
+      font-size: 3.75rem;
+    }
+    .banner-btn {
+      justify-content: center;
+    }
+    .btn {
+      padding: 1rem;
+    }
+  }
 }
