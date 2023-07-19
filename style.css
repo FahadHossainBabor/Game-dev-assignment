@@ -68,19 +68,22 @@
   font-weight: 500;
 }
 
-.nav-logo {
+.nav-logo,
+.footer-logo {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.nav-logo > div {
+.nav-logo,
+.footer-logo > div {
   text-align: center;
   font-size: 2.8125rem;
   font-weight: 700;
 }
 
-.nav-logo > div > span {
+.nav-logo,
+.footer-logo > div > span {
   background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
   background-clip: text;
   -webkit-background-clip: text;
@@ -192,13 +195,73 @@
   font-weight: 700;
   line-height: 2.8125rem;
 }
+
+/* Footer section */
+footer {
+  height: 35rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #0b0223;
+}
+.footer-logo-contianer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4.12rem;
+  color: white;
+}
+.footer-items {
+  margin-bottom: 3rem;
+  color: white;
+  font-weight: 600;
+}
+.footer-items > ul {
+  display: flex;
+  gap: 3.75rem;
+}
+
+.footer-items > ul > li {
+  list-style-type: none;
+}
+
+.footer-icon {
+  margin-bottom: 3rem;
+  color: white;
+}
+.footer-icon > i {
+  margin-left: 20px;
+  font-size: 1.5rem;
+}
+
+.privacy-policy {
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+}
+.privacy-policy > ul {
+  display: flex;
+  gap: 3.75rem;
+}
+
+.privacy-policy ul li {
+  list-style-type: none;
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+}
+
 /* Media query to make the website responsive */
 
 @media screen and (max-width: 576px) {
   /* Navigation section */
   @media screen and (max-width: 576px) {
     /* Navigation section */
-    .nav-container {
+    .nav-container,
+    .gamer-contaienr {
       flex-direction: column;
       height: auto;
     }
@@ -245,5 +308,30 @@
     .btn {
       padding: 1rem;
     }
+  }
+
+  /* Gamer section */
+  .gamer-contaienr {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .gamer-content {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .gamer-title {
+    text-align: center;
+  }
+
+  .unleash {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+  .gamer-contaienr img {
+    width: 100%;
+    height: auto;
   }
 }
