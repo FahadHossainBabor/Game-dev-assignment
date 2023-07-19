@@ -254,6 +254,46 @@ footer {
   font-weight: 500;
 }
 
+/* Video section */
+.video {
+  width: 100%;
+  padding: 100px;
+}
+
+.video > p {
+  margin-top: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.video-title {
+  color: #0b0223;
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.video-title-special{
+  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: Work Sans;
+font-size: 3rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.image-contianer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 /* Media query to make the website responsive */
 
 @media screen and (max-width: 576px) {
