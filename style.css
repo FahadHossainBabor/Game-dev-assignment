@@ -427,6 +427,20 @@ footer {
       padding: 1rem;
     }
   }
+  /* Video section */
+
+  .image-contianer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .video-title,
+  .video-title-special {
+    font-size: 2rem;
+  }
+
+  .video > p {
+    font-size: 1rem;
+  }
 
   /* Gamer section */
   .gamer-contaienr {
@@ -454,42 +468,57 @@ footer {
   }
 
   /* Button section */
-  .button{
+  .button {
     padding: 10px;
     display: grid;
     grid-template-columns: 30% 30% 30%;
     gap: 10px;
   }
   .btn-container > p {
-   
     font-size: 15px;
-    
   }
   .btn-container {
     gap: 2px;
   }
   .btn-container:hover {
-    padding:2px;
+    padding: 2px;
   }
-  .button img{
+  .button img {
     width: 35px;
+  }
+  /* Player section */
+  .player {
+    flex-direction: column;
+  }
+  .player-title {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .player-content {
+    text-align: center;
+  }
+  .player-inner {
+    text-align: center;
+  }
+  .inner-image-box img {
+    width: 100%;
   }
 
   /* Footer section */
-  footer{
+  footer {
     width: 100%;
   }
-  .footer-items > ul{
+  .footer-items > ul {
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
   }
 
-  .privacy-policy>ul{
+  .privacy-policy > ul {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
   }
-
-
 }
