@@ -82,7 +82,7 @@
   font-weight: 700;
 }
 
-.nav-logo,
+.nav-logo > div > span,
 .footer-logo > div > span {
   background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
   background-clip: text;
@@ -419,56 +419,56 @@ footer {
 /* Media query to make the website responsive */
 
 @media screen and (max-width: 576px) {
-    /* Navigation section */
-    .nav-container,
-    .gamer-contaienr {
-      flex-direction: column;
-      height: auto;
-    }
+  /* Navigation section */
+  .nav-container,
+  .gamer-contaienr {
+    flex-direction: column;
+    height: auto;
+  }
 
-    .nav-menu > ul {
-      flex-direction: column;
-      width: 100%;
-    }
+  .nav-menu > ul {
+    flex-direction: column;
+    width: 100%;
+  }
 
-    .nav-menu > ul > li {
-      margin-bottom: 10px;
-    }
+  .nav-menu > ul > li {
+    margin-bottom: 10px;
+  }
 
-    .nav-logo {
-      margin-bottom: 20px;
-    }
+  .nav-logo {
+    margin-bottom: 20px;
+  }
 
-    .nav-logo > div {
-      font-size: 2rem;
-    }
+  .nav-logo > div {
+    font-size: 2rem;
+  }
 
-    .special {
-      width: 16.375rem;
-      text-align: center;
-      padding: 1.25rem;
-    }
+  .special {
+    width: 16.375rem;
+    text-align: center;
+    padding: 1.25rem;
+  }
 
-    /* Banner section */
-    .banner-container {
-      flex-direction: column-reverse;
-    }
+  /* Banner section */
+  .banner-container {
+    flex-direction: column-reverse;
+  }
 
-    .banner-container,
-    .banner-content {
-      padding: 0 20px;
-    }
+  .banner-container,
+  .banner-content {
+    padding: 0 20px;
+  }
 
-    .banner-special-title {
-      font-size: 3.75rem;
-    }
-    .banner-btn {
-      justify-content: center;
-    }
-    .btn {
-      padding: 1rem;
-    }
-  
+  .banner-special-title {
+    font-size: 3.75rem;
+  }
+  .banner-btn {
+    justify-content: center;
+  }
+  .btn {
+    padding: 1rem;
+  }
+
   /* Video section */
 
   .image-contianer {
